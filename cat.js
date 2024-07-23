@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
     function fetchCatQuote() {
         fetch('https://catfact.ninja/fact')
             .then(response => response.json())
-            .then(data => {
+            .then(data => { 
                 document.getElementById('catQuote').innerText = data.fact;
             })
             .catch(error => {
